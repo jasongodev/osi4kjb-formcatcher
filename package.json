@@ -1,0 +1,36 @@
+{
+  "name": "osi4kjb-formcatcher",
+  "version": "1.0.0",
+  "description": "",
+  "source": "./src/index.js",
+  "main": "./dist/osi4kjb-formcatcher.umd.js",
+  "module": "./dist/osi4kjb-formcatcher.esm.js",
+  "exports": {
+    "require": "./dist/osi4kjb-formcatcher.umd.js",
+    "default": "./dist/osi4kjb-formcatcher.esm.js"
+  },
+  "browserslist": "firefox 53 or chrome 58",
+  "microbundle": "microbundle --sourcemap=false --compress=false",
+  "scripts": {
+    "build": "$npm_package_microbundle --external none --format=umd; $npm_package_microbundle --format=esm"
+  },
+  "keywords": [],
+  "author": "Jason Go",
+  "license": "LGPL-3.0",
+  "devDependencies": {
+    "core-js": "^3.23.2",
+    "microbundle": "^0.15.0",
+    "standard": "^17.0.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "useBuiltIns": "usage",
+          "corejs": "3.23"
+        }
+      ]
+    ]
+  }
+}
