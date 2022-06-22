@@ -1,6 +1,6 @@
 {
   "name": "osi4kjb-formcatcher",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "source": "./src/index.js",
   "main": "./dist/osi4kjb-formcatcher.umd.js",
